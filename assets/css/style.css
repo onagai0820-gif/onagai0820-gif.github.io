@@ -650,10 +650,13 @@ img { max-width: 100%; height: auto; display: block; }
 /* ---------- 18. Contact ---------- */
 .form-embed {
   width: 100%;
-  min-height: 640px;
+  min-height: 800px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg-subtle);
+}
+@media (max-width: 40rem) {
+  .form-embed { min-height: 900px; }
 }
 .form-placeholder {
   display: grid;
