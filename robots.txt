@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onagai0820-gif.github.io/sitemap.xml

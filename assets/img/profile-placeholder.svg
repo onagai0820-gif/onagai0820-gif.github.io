@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="プロフィール写真（差し替え予定）">
+  <rect width="400" height="400" fill="#eef2ff"/>
+  <g fill="none" stroke="#3b5bdb" stroke-width="10" stroke-linecap="round">
+    <circle cx="150" cy="200" r="52"/>
+    <circle cx="256" cy="200" r="52"/>
+    <path d="M202 196c-2-8 6-12 12 0"/>
+    <path d="M98 186 74 176"/>
+    <path d="M308 186l24-10"/>
+  </g>
+  <text x="200" y="300" font-family="system-ui, sans-serif" font-size="17"
+        fill="#5c636e" text-anchor="middle">写真を入れる場所</text>
+</svg>

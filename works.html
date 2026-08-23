@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>作品・実績 — いち</title>
+<meta name="description" content="マーケットボード、焼きそばパンの手売り、動画編集、フィリピンでの飲食事業。いちがつくってきたものの記録。">
+<link rel="canonical" href="https://onagai0820-gif.github.io/works.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="作品・実績 — いち">
+<meta property="og:description" content="マーケットボード、焼きそばパンの手売り、動画編集、フィリピンでの飲食事業。いちがつくってきたものの記録。">
+<meta property="og:url" content="https://onagai0820-gif.github.io/works.html">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="いち">
+<meta property="og:image" content="https://onagai0820-gif.github.io/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://onagai0820-gif.github.io/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">いち</a>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="index.html">Top</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html" aria-current="page">Works</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">Works</p>
+      <h1 class="hero-title">つくったもの</h1>
+      <p class="hero-lead">
+        自分で計画して、自分でつくって、自分で売ったもの。
+        うまくいったものも、途中のものも、そのまま置いておきます。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- 1. マーケットボード -->
+      <article class="work reveal" id="market-board">
+        <div class="work-head">
+          <p class="card-meta">
+            <span class="tag">Web・コード</span>
+            <span class="status status--live">公開中・自動更新</span>
+            <span>2026</span>
+          </p>
+          <h2 class="work-title">マーケットボード</h2>
+        </div>
+        <div class="work-body">
+          <p>
+            世界の主要な株価指数、ボラティリティ指数、金利、為替、商品、暗号資産、
+            そしてマーケットのニュースを、1ページにまとめた静的ダッシュボードです。
+            毎日、自動で更新され続けています。
+          </p>
+
+          <h3>つくり方</h3>
+          <ul>
+            <li>サイト本体は HTML / CSS / JavaScript のみ。フレームワークもビルドも使っていません</li>
+            <li>データの取得は Python の標準ライブラリだけで書きました。外部ライブラリはゼロです</li>
+            <li>GitHub Actions が定期的に走ってデータを取り直し、自動でコミットします</li>
+            <li>検索エンジン向けの情報整備と、アクセス解析の導入まで済ませています</li>
+          </ul>
+
+          <h3>いちばん時間をかけたのは、「載せない」判断でした</h3>
+          <p>
+            データの取得元は、公的機関か正規のベンダーが公開している API だけに絞りました。
+            非公式の内部エンドポイントは、取れてしまっても使っていません。
+          </p>
+          <p>
+            そのぶん、無料の範囲では正確な値が取れないものが出てきます。
+            TOPIX、DAX、FTSE 100、ハンセン指数、KOSPI、日本の個別株、銀。
+            これらは<strong>載せないことにして、その理由もサイトに書きました</strong>。
+            間違った数字を出すくらいなら、無いほうがいいと思ったからです。
+          </p>
+
+          <blockquote>
+            <p>
+              調べていて一番ひやっとしたのは、<code>DAX</code> という銘柄コードです。
+              無料枠でもちゃんと応答が返ってくるのですが、中身はドイツのDAX指数ではなく、
+              NASDAQ に上場している全然別の銘柄でした。約47ドル。DAX指数は約26,000ポイントです。
+            </p>
+            <p>
+              コードが一致しているだけでは信用できない。通貨と、取引所と、値の桁を必ず確かめる。
+              これはこの制作で一番大きな学びでした。
+            </p>
+          </blockquote>
+
+          <div class="work-links">
+            <a class="btn" href="https://onagai0820-gif.github.io/market-dashboard/" target="_blank" rel="noopener">サイトを見る</a>
+            <a class="btn btn--ghost" href="https://github.com/onagai0820-gif/market-dashboard" target="_blank" rel="noopener">GitHub でコードを見る</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. 焼きそばパン -->
+      <article class="work reveal" id="yakisoba-pan">
+        <div class="work-head">
+          <p class="card-meta">
+            <span class="tag">ビジネス</span>
+            <span class="status">完了</span>
+            <span>2025</span>
+          </p>
+          <h2 class="work-title">焼きそばパンの手売り</h2>
+        </div>
+        <div class="work-body">
+          <p>
+            フィリピンでの、はじめての起業体験です。友人と弟との3人で、
+            焼きそばパンをつくって、現地の人に直接手売りしました。
+          </p>
+          <p>
+            何をいくらで売るかの計画、材料費の計算、調理、そして販売。
+            全部の工程を自分たちだけでやりました。誰かに用意してもらった仕組みの上で
+            動いたわけではない、というのがこの経験の一番の価値だと思っています。
+          </p>
+
+          <h3>覚えていること</h3>
+          <ul>
+            <li>売り切ったときの達成感。あれは他では味わえないものでした</li>
+            <li>自分たちで稼いだ売上の金額を、実際に目で見たときの感覚</li>
+            <li>仲間の一人がパン屋に突撃して、焼きそばパンを売りつけてきたこと。今でもあれは暴挙だったと思っています</li>
+          </ul>
+          <p>
+            今フィリピンで飲食の事業を考えているのは、間違いなくこの経験があるからです。
+          </p>
+        </div>
+      </article>
+
+      <!-- 3. 動画 -->
+      <article class="work reveal" id="video">
+        <div class="work-head">
+          <p class="card-meta">
+            <span class="tag">映像</span>
+            <span class="status">進行中</span>
+            <span>2026</span>
+          </p>
+          <h2 class="work-title">取材と、動画編集</h2>
+        </div>
+        <div class="work-body">
+          <p>
+            現地で活動している団体への取材と、その動画編集をしています。
+            話を聞きに行くところから、撮影、編集、書き出しまで。
+          </p>
+          <p>
+            メンバーは<a href="#yakisoba-pan">焼きそばパンを売ったとき</a>と同じ3人です。
+            商売をやったチームで、そのまま映像もやっている形になります。
+            一緒にやった時間が長いぶん、役割分担で迷うことがほとんどありません。
+          </p>
+          <!-- TODO: 公開できる動画が決まったら、ここに埋め込みかリンクを入れる -->
+          <p class="card-desc">※ 公開できる作品が決まり次第、ここに掲載します。</p>
+        </div>
+      </article>
+
+      <!-- 4. 白玉・カフェ -->
+      <article class="work reveal" id="food-business">
+        <div class="work-head">
+          <p class="card-meta">
+            <span class="tag">ビジネス</span>
+            <span class="status">計画中</span>
+            <span>2026 –</span>
+          </p>
+          <h2 class="work-title">フィリピンでの事業づくり</h2>
+        </div>
+        <div class="work-body">
+          <p>
+            いま準備を進めているものです。
+            最初の入り口として飲食や物販を考えていますが、
+            <strong>この分野でやると決めているわけではありません</strong>。
+            うまくいく形が見つかれば、どの方面からでも構わないと思っています。
+          </p>
+
+          <h3>入り口を、一度変えました</h3>
+          <p>
+            最初は白玉を使ったスイーツを考えていました。日本らしくて、原価も読みやすい。
+            けれど調べてみると、この場所で求められているのはデザートよりも
+            <strong>ご飯もの</strong>でした。アイデアを一度置いて、方向を変えることにしました。
+            その判断の過程は<a href="blog/2026-08-10-dessert-to-rice.html">ブログに書いています</a>。
+          </p>
+
+          <h3>進め方</h3>
+          <ul>
+            <li>いきなり大きく賭けない。小さい規模から始める</li>
+            <li>お客さんの反応を見ながら、次に進むかどうかを決める</li>
+            <li>価格は、お客さんが気持ちよく払える範囲に置く。搾取はしない</li>
+          </ul>
+
+          <h3>どこまで持っていきたいか</h3>
+          <p>
+            始め方は小さくしますが、<strong>目指している規模は小さくありません</strong>。
+            最終的に100億円でバイアウトできるところまで広げられる形を、
+            最初から選んでおきたいと思っています。
+          </p>
+          <p>
+            小さく始めることと、大きくならない形を選ぶことは、別の話です。
+            そこを混同しないようにしたい。
+          </p>
+          <p>
+            うまくいくかどうかは、まだ分かりません。分かったら、ここに書き足します。
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 いち</p>
+    <ul class="footer-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
