@@ -691,3 +691,22 @@ img { max-width: 100%; height: auto; display: block; }
   place-items: center;
   text-align: center;
 }
+
+/* ---------- 20. 動画の埋め込み ---------- */
+.video-embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-subtle);
+  display: block;
+}
+
+.video-item + .video-item { margin-top: var(--sp-8); }
+
+.video-caption {
+  margin-top: var(--sp-3);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+.video-caption strong { color: var(--text); }
